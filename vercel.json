@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "framework": "null",
+  "builds": [
+    {
+      "src": "api/index.php",
+      "use": "vercel-php@0.6.1"
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/build/(.*)",
+      "dest": "/public/build/$1"
+    },
+    {
+      "src": "/(css|js|images|videos)/(.*)",
+      "dest": "/public/$1/$2"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
+    }
+  ],
+  "env": {
+    "APP_ENV": "production",
+    "APP_DEBUG": "false",
+    "APP_KEY": "base64:j6EFIjriq9VI5UrX3aidct32IhBFSqVEdIPUN6PHSb0=",
+    "DB_CONNECTION": "sqlite",
+    "DB_DATABASE": "/var/task/database/database.sqlite",
+    "APP_CONFIG_CACHE": "/tmp/config.php",
+    "APP_EVENTS_CACHE": "/tmp/events.php",
+    "APP_PACKAGES_CACHE": "/tmp/packages.php",
+    "APP_ROUTES_CACHE": "/tmp/routes.php",
+    "APP_SERVICES_CACHE": "/tmp/services.php",
+    "VIEW_COMPILED_PATH": "/tmp",
+    "CACHE_STORE": "array",
+    "SESSION_DRIVER": "cookie"
+  }
+}
