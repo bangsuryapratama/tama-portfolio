@@ -1,6 +1,5 @@
 {
   "version": 2,
-  
   "builds": [
     {
       "src": "api/index.php",
@@ -27,7 +26,7 @@
   ],
   "env": {
     "APP_ENV": "production",
-    "APP_DEBUG": "false",
+    "APP_DEBUG": "true",
     "APP_KEY": "base64:j6EFIjriq9VI5UrX3aidct32IhBFSqVEdIPUN6PHSb0=",
     "DB_CONNECTION": "sqlite",
     "DB_DATABASE": "/var/task/database/database.sqlite",
@@ -38,6 +37,7 @@
     "APP_SERVICES_CACHE": "/tmp/services.php",
     "VIEW_COMPILED_PATH": "/tmp",
     "CACHE_STORE": "array",
-    "SESSION_DRIVER": "cookie"
+    "SESSION_DRIVER": "cookie",
+    "LOG_CHANNEL": "stderr"
   }
 }
