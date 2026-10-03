@@ -43,4 +43,4 @@ RUN echo 'server { \
 
 EXPOSE 8080
 
-CMD php-fpm -D && nginx -g "daemon off;"
+CMD touch database/database.sqlite && php artisan migrate --force && php-fpm -D && nginx -g "daemon off;"
