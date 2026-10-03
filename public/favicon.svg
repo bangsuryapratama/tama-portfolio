@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f1f1f" />
+      <stop offset="100%" stop-color="#050505" />
+    </linearGradient>
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#999999" />
+    </linearGradient>
+  </defs>
+
+  <rect width="100" height="100" fill="url(#bg-grad)" rx="30"/>
+
+  <text x="50" y="60" font-family="Didot, 'Bodoni MT', 'Times New Roman', serif" font-size="32" font-style="italic" fill="url(#text-grad)" text-anchor="middle" letter-spacing="4">SPR</text>
+
+  <line x1="30" y1="70" x2="70" y2="70" stroke="#555555" stroke-width="0.5" />
+</svg>
